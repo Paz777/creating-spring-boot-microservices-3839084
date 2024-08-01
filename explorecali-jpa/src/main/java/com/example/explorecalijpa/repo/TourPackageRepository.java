@@ -11,6 +11,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
  * Challenge: Change url keyword to "packages"
  */
 
+@RepositoryRestResource(path = "package", collectionResourceRel = "package")
 public interface TourPackageRepository extends JpaRepository<TourPackage, String> {
   Optional<TourPackage> findByName(String name);
 }
