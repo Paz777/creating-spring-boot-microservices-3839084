@@ -113,5 +113,6 @@ public class TourRatingController {
   @ResponseStatus(HttpStatus.NOT_FOUND)
   public String return404(NoSuchElementException exception) {
     return exception.getMessage();
+    
   }
 }
